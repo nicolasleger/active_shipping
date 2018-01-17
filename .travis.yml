@@ -10,6 +10,8 @@ rvm:
 gemfile:
 - gemfiles/activesupport42.gemfile
 - gemfiles/activesupport50.gemfile
+- gemfiles/activesupport51.gemfile
+- gemfiles/activesupport52.gemfile
 - gemfiles/activesupport_master.gemfile
 
 matrix:
