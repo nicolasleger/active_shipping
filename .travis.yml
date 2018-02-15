@@ -3,9 +3,10 @@ script: bundle exec rake test
 sudo: false
 
 rvm:
-- "2.2.2"
-- "2.3.1"
-- "2.4.0"
+- 2.2
+- 2.3
+- 2.4
+- 2.5
 
 gemfile:
 - gemfiles/activesupport42.gemfile
@@ -14,7 +15,9 @@ gemfile:
 
 matrix:
   exclude:
-    - rvm: "2.4.0"
+    - rvm: 2.4
+      gemfile: gemfiles/activesupport42.gemfile
+    - rvm: 2.5
       gemfile: gemfiles/activesupport42.gemfile
 
 env:
